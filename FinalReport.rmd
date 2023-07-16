@@ -1,6 +1,8 @@
 ---
 title: "GSS challange More Data"
-author: "Kenroy Fuller"
+author: "Kenroy Fulle
+\
+r"
 date: "7/7/2023"
 output: html_document
 ---
@@ -41,6 +43,14 @@ If not, then whose view differs from whom??
 ## Descriptive Results
 
 ### Graphical Descriptive Results
+
+```{r}
+barchartGC(~race + cappun,data=mydata)
+barchartGC(~race + cappun,data=mydata, type="percent")
+
+```
+The Graphical Descriptive Results that white greatly race favor capital punishment that the black race and other too.The black race is the lease favor for capital pusishment than the white and other race.The blue bar is favor for capital punishment and light brown is opposed to capital punishment.
+
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
