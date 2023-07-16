@@ -82,7 +82,20 @@ The data shows white favor capital punishment with a 65.10% and a 34.90% lowest 
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-`
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The chi-squared test came out with a 80%. The p-value is extemly low with a 2.2e.
+
+
+```{r}
+fisherXY(mydata$race,mydata$cappun)
+```
+
+The shows that every other race is different with their data. The p-value is still very low. The white race shows a greater favor for capital punishment.
 
 
 ## More data version
